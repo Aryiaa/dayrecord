@@ -1,3 +1,4 @@
 use csws;
 souece C:\Users\Administrator\Desktop\客服词条08022\create;
 查看mysql字符集 show variables like 'character%';
+如果报错内容：Failed to open file 'create.sql', error: 2 ，则修改路径吧'\'换成‘\\’,要哭了……
