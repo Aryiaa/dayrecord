@@ -1,0 +1,3 @@
+use csws;
+souece C:\Users\Administrator\Desktop\客服词条08022\create;
+查看mysql字符集 show variables like 'character%';
