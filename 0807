@@ -1,0 +1,2 @@
+前端点击+复制相同的内容用append函数，具体见csws多用户添加，多词条添加
+后端拿到列表内容用 getlist  names = post.getlist('name')
