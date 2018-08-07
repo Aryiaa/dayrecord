@@ -1,2 +1,16 @@
 flask-migrate 是一个为flask应用处理sqlalchemy 数据库迁移的扩展，使得可以通过flask的命令行或者flask-scripts对数据库进行操作
 例子：
+1. 安装Flask-Migrate插件
+
+$ pip install Flask-Migrate
+
+2. 修改Flask App部分的代码，以增加Migrate相关的Commanddb = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+manager = Manager(app)
+manager.add_command('db', MigrateCommand)
+
+3. 初始化
+
+$ python app.py db init
+
