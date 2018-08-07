@@ -9,5 +9,11 @@ python manage.py runserver #启动服务
 python manage.py db init #初始化脚本
 python manage.py db migrate 修改数据库表结构
 
-
-怕
+#首先我们要将flask-scripts中的manager加入到项目中
+from flask-scripts import Manager
+#然后将项目APP包含在Manager函数中 
+ manager=Manager(app)
+ 
+ @manager.option('-n','-name',dest='name',default='aiko')
+ def hello(name):
+  print('hello'+name)
