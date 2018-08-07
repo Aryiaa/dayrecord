@@ -8,3 +8,6 @@ python manage.py db init
 python manage.py runserver #启动服务
 python manage.py db init #初始化脚本
 python manage.py db migrate 修改数据库表结构
+
+
+怕
