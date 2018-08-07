@@ -1,0 +1,10 @@
+flask-script 是一个flask扩展，为flask程序添加了一个命令行解析器
+可以通过命令行的形式来操作flask,例如通过命令跑一个开发版本的服务器，设置数据库，定时任务等
+如果直接在主manage.py中写命令，那么在终端只需要输入 python manage.py command_name
+如果把一些命令集中放在一个文件中，那么在中断就需要输入一个fu，命令如：
+python manage.py db init
+
+
+python manage.py runserver #启动服务
+python manage.py db init #初始化脚本
+python manage.py db migrate 修改数据库表结构
