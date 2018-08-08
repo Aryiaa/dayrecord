@@ -32,3 +32,4 @@ class Person(Base):
     age=Column(Integer)
 
 Base.metadata.create_all()
+注意一旦使用base.metadata.create_all() 新加的字段不会映射去
