@@ -1,2 +1,17 @@
 pyhton 3 操作数据库 pymysql
 mysqldb 只能 用在pyhton 2 
+
+from sqlalchemy import create_engine
+HOSTNAME='127.0.0.1'
+PORT='3306'
+DATABASE='csws'
+USERNAME='root'
+PASSWORD='admin'
+DB_URI='mysql+pymysql://{}:{}@{}:{}/{}'.format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+# DB_URI='mysql+pymysql:{}:{}@{}:{}/{}'.format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+
+engine=create_engine(DB_URI)
+with engine.connect() as con:
+    rs=con.execute('show tables')
+    print(rs.fetchone())
+    print(rs.fetchall())
